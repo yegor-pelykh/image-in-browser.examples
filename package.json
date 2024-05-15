@@ -1,0 +1,32 @@
+{
+  "name": "image-in-browser.examples",
+  "version": "1.0.0",
+  "description": "A set of examples of using library image-in-browser.",
+  "author": "Yegor Pelykh <yegor.dev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yegor-pelykh/image-in-browser.examples"
+  },
+  "type": "module",
+  "scripts": {
+    "format:examples": "prettier --write \"examples/**/*.ts\" \"examples/**/*.js\" --no-error-on-unmatched-pattern",
+    "format:eslint": "eslint --fix",
+    "format": "npm run format:examples && npm run format:eslint",
+    "build:pre": "node pre-build.js",
+    "build:examples": "tsc -p tsconfig.json",
+    "build": "npm run build:pre && npm run format && npm run build:examples"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "image-in-browser": "file://../image-in-browser"
+  }
+}
