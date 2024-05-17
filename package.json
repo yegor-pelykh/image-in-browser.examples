@@ -27,6 +27,6 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "image-in-browser": "file://../image-in-browser"
+    "image-in-browser": "^2.7.1"
   }
 }
