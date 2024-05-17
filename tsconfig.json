@@ -5,6 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "lib": [
       "ES6",
+      "dom"
     ],
     "module": "ESNext",
     "moduleResolution": "node",
