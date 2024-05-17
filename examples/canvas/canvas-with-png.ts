@@ -4,7 +4,6 @@ import { Utils } from '../_utils/utils.js';
 import { Folder } from '../_utils/folder.js';
 import { Section } from '../_utils/section.js';
 import { ChannelOrder, decodePng } from 'image-in-browser';
-import { assert } from 'console';
 
 const fileName = 'buck_24.png';
 
