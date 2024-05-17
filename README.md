@@ -25,27 +25,33 @@ The environment will launch the build process in the background, and then launch
 Quick links to examples
 =======================
 
+### Getting basic information about image
+
+[Getting basic information about a PNG image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/png-info.ts)
+
+[Getting basic information about a PSD image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/psd-info.ts)
+
+[Getting basic information about a PVR image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/pvr-info.ts)
+
+[Getting basic information about a WebP image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/webp-info.ts)
+
+### Displaying a MemoryImage on a canvas
+
+[Displaying a PNG image on a canvas](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/canvas/canvas-with-png.ts)
+
 ### Conversion
 
-<details>
-  <summary>Convert PNG to BMP</summary>
-  https://github.com/yegor-pelykh/image-in-browser.examples/blob/1a599e96e0bf5df865d5b07544ff107ace2e46e0/examples/convert/png-to-bmp.ts#L3-L30
-</details>
+[Сonversion from PNG to BMP](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-bmp.ts)
 
-<details>
-  <summary>Convert PNG to GIF</summary>
-  https://github.com/yegor-pelykh/image-in-browser.examples/blob/1a599e96e0bf5df865d5b07544ff107ace2e46e0/examples/convert/png-to-gif.ts#L3-L30
-</details>
+[Сonversion from PNG to GIF](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-gif.ts)
 
-<details>
-  <summary>Convert PNG to ICO</summary>
-  https://github.com/yegor-pelykh/image-in-browser.examples/blob/1a599e96e0bf5df865d5b07544ff107ace2e46e0/examples/convert/png-to-ico.ts#L3-L38
-</details>
+[Сonversion from PNG to ICO](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-ico.ts)
 
-<details>
-  <summary>Convert PNG to JPG</summary>
-  https://github.com/yegor-pelykh/image-in-browser.examples/blob/1a599e96e0bf5df865d5b07544ff107ace2e46e0/examples/convert/png-to-jpg.ts#L3-L30
-</details>
+[Сonversion from PNG to JPG](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-jpg.ts)
+
+### Working with EXIF data
+
+[Writing and reading EXIF data of JPG image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/exif-data/exif-jpeg.ts)
 
 
 Links
