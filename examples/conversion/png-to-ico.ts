@@ -5,11 +5,14 @@ import { Folder } from '../_utils/folder.js';
 import { Section } from '../_utils/section.js';
 import { Transform, decodePng, encodeIco } from 'image-in-browser';
 
+const inputFileName = 'buck_24.png';
+const outputFileName = 'buck_24.ico';
+
 /**
- * Shows how to convert from PNG to ICO.
+ * Сonversion from PNG to ICO.
  */
 function convertToIco() {
-  const input = Utils.readFile(Folder.input, Section.png, 'buck_24.png');
+  const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // decoding PNG bytes to MemoryImage
   const image = decodePng({
@@ -32,7 +35,7 @@ function convertToIco() {
     image: resized,
   });
 
-  Utils.writeFile(Folder.output, Section.ico, 'buck_24.ico', output);
+  Utils.writeFile(Folder.output, Section.ico, outputFileName, output);
 }
 
 convertToIco();

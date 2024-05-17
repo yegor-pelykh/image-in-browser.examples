@@ -5,11 +5,14 @@ import { Folder } from '../_utils/folder.js';
 import { Section } from '../_utils/section.js';
 import { decodePng, encodeGif } from 'image-in-browser';
 
+const inputFileName = 'buck_24.png';
+const outputFileName = 'buck_24.gif';
+
 /**
- * Shows how to convert from PNG to GIF.
+ * Сonversion from PNG to GIF.
  */
 function convertToGif() {
-  const input = Utils.readFile(Folder.input, Section.png, 'buck_24.png');
+  const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // decoding PNG bytes to MemoryImage
   const image = decodePng({
@@ -24,7 +27,7 @@ function convertToGif() {
     image: image,
   });
 
-  Utils.writeFile(Folder.output, Section.gif, 'buck_24.gif', output);
+  Utils.writeFile(Folder.output, Section.gif, outputFileName, output);
 }
 
 convertToGif();
