@@ -27,65 +27,65 @@ Quick links to examples
 
 ### Getting basic information about image
 
-[Getting basic information about a PNG image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/png-info.ts)
+[**Getting basic information about a PNG image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/png-info.ts)
 
-[Getting basic information about a PSD image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/psd-info.ts)
+[**Getting basic information about a PSD image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/psd-info.ts)
 
-[Getting basic information about a PVR image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/pvr-info.ts)
+[**Getting basic information about a PVR image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/pvr-info.ts)
 
-[Getting basic information about a WebP image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/webp-info.ts)
+[**Getting basic information about a WebP image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/basic-info/webp-info.ts)
 
 ### Displaying a MemoryImage on a canvas
 
-[Displaying a PNG image on a canvas](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/canvas/canvas-with-png.ts)
+[**Displaying a PNG image on a canvas**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/canvas/canvas-with-png.ts)
 
 ### Conversion
 
-[Сonversion from PNG to BMP](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-bmp.ts)
+[**Сonversion from PNG to BMP**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-bmp.ts)
 
-[Сonversion from PNG to GIF](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-gif.ts)
+[**Сonversion from PNG to GIF**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-gif.ts)
 
-[Сonversion from PNG to ICO](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-ico.ts)
+[**Сonversion from PNG to ICO**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-ico.ts)
 
-[Сonversion from PNG to JPG](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-jpg.ts)
+[**Сonversion from PNG to JPG**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/conversion/png-to-jpg.ts)
 
 ### Drawing
 
-[Overlaying images on top of each other](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/composite-image.ts)
+[**Overlaying images on top of each other**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/composite-image.ts)
 
-[Drawing lines on the image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/draw-line.ts)
+[**Drawing lines on the image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/draw-line.ts)
 
-[Drawing pixels of different colors](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/draw-pixel.ts)
+[**Drawing pixels of different colors**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/draw-pixel.ts)
 
-[Drawing filled rectangles](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/fill-rect.ts)
+[**Drawing filled rectangles**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/fill-rect.ts)
 
-[Filling the entire image with a solid color](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/fill.ts)
+[**Filling the entire image with a solid color**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/draw/fill.ts)
 
 ### Working with EXIF data
 
-[Writing and reading EXIF data of JPG image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/exif-data/exif-jpeg.ts)
+[**Writing and reading EXIF data of JPG image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/exif-data/exif-jpeg.ts)
 
 ### Filters
 
-[Applying a contrast filter](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/contrast.ts)
+[**Applying a contrast filter**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/contrast.ts)
 
-[Applying a monochrome filter](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/monochrome.ts)
+[**Applying a monochrome filter**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/monochrome.ts)
 
-[Applying a sepia filter](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/sepia.ts)
+[**Applying a sepia filter**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/sepia.ts)
 
 ### MemoryImage features
 
-[Getting MemoryImage bytes in a specific order](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/memory-image/get-bytes.ts)
+[**Getting MemoryImage bytes in a specific order**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/memory-image/get-bytes.ts)
 
-[Iterating over MemoryImage pixels](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/memory-image/iteration.ts)
+[**Iterating over MemoryImage pixels**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/memory-image/iteration.ts)
 
 ### Transformations
 
-[Cropping images in a circle shape](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-crop-circle.ts)
+[**Cropping images in a circle shape**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-crop-circle.ts)
 
-[Flip image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-flip.ts)
+[**Flip image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-flip.ts)
 
-[Rotating an image](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-rotate.ts)
+[**Rotating an image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/transform/copy-rotate.ts)
 
 Links
 =====
