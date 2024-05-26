@@ -27,7 +27,7 @@ function testCopyFlipTransform() {
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // Applying copyFlip filter
+  // Applying copyFlip transformation
   image = Transform.copyFlip({
     image: image,
     direction: FlipDirection.both,

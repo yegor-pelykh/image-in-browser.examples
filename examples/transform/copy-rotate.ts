@@ -27,7 +27,7 @@ function testCopyRotateTransform() {
     numChannels: 4,
   });
 
-  // Applying copyRotate filter
+  // Applying copyRotate transformation
   image = Transform.copyRotate({
     image: image,
     angle: 45,

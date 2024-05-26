@@ -27,7 +27,7 @@ function testCopyCropCircleTransform() {
     numChannels: 4,
   });
 
-  // Applying copyCropCircle filter
+  // Applying copyCropCircle transformation
   image = Transform.copyCropCircle({
     image: image,
   });
