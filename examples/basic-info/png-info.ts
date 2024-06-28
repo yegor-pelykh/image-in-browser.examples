@@ -8,7 +8,11 @@ import { PngColorType, PngDecoder } from 'image-in-browser';
 const fileName = 'buck_24.png';
 
 /**
- * Getting basic information about a PNG image
+ * Retrieves and prints information about a PNG file.
+ *
+ * This function reads a PNG file, decodes it to extract metadata, and prints
+ * the file name, dimensions, bits per pixel, color type, animation status,
+ * and number of frames.
  */
 function getPngInfo() {
   const input = Utils.readFile(Folder.input, Section.png, fileName);

@@ -9,7 +9,11 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_filter_monochrome.png';
 
 /**
- * Applying a monochrome filter
+ * Function to test the application of a monochrome filter on a PNG image.
+ *
+ * This function reads a PNG image from the input folder, decodes it into a MemoryImage,
+ * applies a monochrome filter with a specified color, encodes the modified image back
+ * into PNG format, and writes the result to the output folder.
  */
 function testMonochromeFilter() {
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);

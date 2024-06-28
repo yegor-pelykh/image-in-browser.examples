@@ -8,7 +8,10 @@ import { PsdColorMode, PsdDecoder } from 'image-in-browser';
 const fileName = 'psd4.psd';
 
 /**
- * Getting basic information about a PSD image
+ * Retrieves and prints information about a PSD file.
+ *
+ * This function reads a PSD file, decodes it to extract information,
+ * and then prints the file name, dimensions, and color mode.
  */
 function getPsdInfo() {
   const input = Utils.readFile(Folder.input, Section.psd, fileName);

@@ -9,7 +9,9 @@ const output1FileName = 'iterate1.png';
 const output2FileName = 'iterate2.png';
 
 /**
- * Iterating over MemoryImage pixels
+ * Function to test different ways of iterating over pixels in an image.
+ * It creates a 1000x1000 pixel image, fills it with random colors using a for...of loop,
+ * saves the image, then converts the image to grayscale using an iterator and saves it again.
  */
 function testPixelIteration() {
   // Let's create a simple 1000x1000 pixel image with just a black background

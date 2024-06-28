@@ -9,12 +9,14 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24.bmp';
 
 /**
- * Сonversion from PNG to BMP.
+ * Converts a PNG image to BMP format.
+ *
+ * This function reads a PNG file from the input folder, decodes it,
+ * encodes it as a BMP image, and then writes the BMP file to the output folder.
  */
 function convertToBmp() {
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
-  // decoding PNG bytes to MemoryImage
   const image = decodePng({
     data: input,
   });
@@ -22,7 +24,6 @@ function convertToBmp() {
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // encoding MemoryImage to BMP bytes
   const output = encodeBmp({
     image: image,
   });

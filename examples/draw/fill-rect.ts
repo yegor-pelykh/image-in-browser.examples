@@ -15,9 +15,12 @@ import {
 const outputFileName = 'fill-rect.png';
 
 /**
- * Drawing filled rectangles on the image
+ * Function to test drawing filled rectangles on an image.
+ * This function creates an image, draws several rectangles with different colors and properties,
+ * and then encodes the image to PNG format.
  */
 function testFillRect() {
+  // Create a new image with specified width and height
   const image = new MemoryImage({
     width: 256,
     height: 256,
@@ -30,7 +33,7 @@ function testFillRect() {
     color: new ColorRgb8(255, 0, 0),
   });
 
-  // drawing a green semi-transparent rectangle
+  // Drawing a green semi-transparent rectangle
   Draw.fillRect({
     image: image,
     rect: new Rectangle(100, 100, 200, 200),
@@ -50,6 +53,7 @@ function testFillRect() {
     image: image,
   });
 
+  // Write the encoded PNG bytes to a file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

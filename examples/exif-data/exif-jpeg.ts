@@ -23,7 +23,9 @@ import {
 const outputFileName = 'exif-info.jpg';
 
 /**
- * Demonstration of writing and reading EXIF data of JPG image
+ * Function to test the handling of JPEG EXIF data.
+ * This function creates EXIF data, embeds it into a simple image,
+ * encodes the image to JPEG, saves it, reloads it, and verifies the EXIF data.
  */
 function testJpgExifData() {
   // First let's create an instance of the ExifData class.

@@ -9,12 +9,15 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24.jpg';
 
 /**
- * Сonversion from PNG to JPG.
+ * Converts a PNG image to a JPG image.
+ *
+ * This function reads a PNG image from the input folder, decodes it into a MemoryImage,
+ * encodes the MemoryImage into JPG format, and writes the resulting JPG image to the output folder.
  */
 function convertToJpg() {
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
-  // decoding PNG bytes to MemoryImage
+  // Decoding PNG bytes to MemoryImage
   const image = decodePng({
     data: input,
   });
@@ -22,7 +25,7 @@ function convertToJpg() {
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // encoding MemoryImage to JPG bytes
+  // Encoding MemoryImage to JPG bytes
   const output = encodeJpg({
     image: image,
   });

@@ -8,7 +8,12 @@ import { WebPDecoder, WebPFormat } from 'image-in-browser';
 const fileName = 'SteamEngine.webp';
 
 /**
- * Getting basic information about a WebP image
+ * Retrieves and prints information about a WebP file.
+ *
+ * This function reads a WebP file from a specified input folder and section,
+ * decodes it using a WebPDecoder, and prints various details about the file
+ * such as its dimensions, alpha channel presence, animation presence, number
+ * of frames, and color mode.
  */
 function getWebPInfo() {
   const input = Utils.readFile(Folder.input, Section.webp, fileName);

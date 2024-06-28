@@ -8,9 +8,10 @@ import { ColorRgba8, Draw, MemoryImage, encodePng } from 'image-in-browser';
 const outputFileName = 'fill.png';
 
 /**
- * Filling the entire image with a solid color
+ * Function to test filling an image with a specific color and encoding it to PNG format.
  */
 function testFill() {
+  // Create a new MemoryImage with specified width and height
   const image = new MemoryImage({
     width: 256,
     height: 256,
@@ -27,6 +28,7 @@ function testFill() {
     image: image,
   });
 
+  // Write the encoded PNG bytes to a file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

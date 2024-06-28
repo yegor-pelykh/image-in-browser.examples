@@ -15,7 +15,9 @@ import {
 const outputFileName = 'draw-pixel.png';
 
 /**
- * Drawing pixels of different colors
+ * Function to test drawing pixels on an image.
+ * This function creates a 256x256 image and fills it with 10,000 randomly colored pixels.
+ * The image is then encoded to PNG format and written to a file.
  */
 function testDrawPixel() {
   const image = new MemoryImage({

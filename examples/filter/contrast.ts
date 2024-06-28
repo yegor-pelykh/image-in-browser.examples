@@ -9,9 +9,12 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_filter_contrast.png';
 
 /**
- * Applying a contrast filter
+ * Function to test the contrast filter on a PNG image.
+ * This function reads an input PNG file, applies a contrast filter,
+ * and writes the modified image to an output file.
  */
 function testContrastFilter() {
+  // Read the input PNG file
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // Decoding PNG bytes to MemoryImage
@@ -19,10 +22,11 @@ function testContrastFilter() {
     data: input,
   });
 
+  // Ensure the image is successfully decoded
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // Applying contrast filter
+  // Applying contrast filter with a contrast value of 200
   Filter.contrast({
     image: image,
     contrast: 200,
@@ -33,6 +37,7 @@ function testContrastFilter() {
     image: image,
   });
 
+  // Write the output PNG file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

@@ -10,7 +10,11 @@ const fgFileName = 'globe.tga';
 const outputFileName = 'buck_24_compositeImage.png';
 
 /**
- * Overlaying images on top of each other
+ * Function to test the composite image transformation.
+ * This function reads a PNG background image and a TGA foreground image,
+ * processes the foreground image to make black pixels transparent,
+ * and then composites the foreground image onto the background image.
+ * The resulting image is then encoded to PNG format and saved to the output folder.
  */
 function testCompositeImageTransform() {
   // Reading and recoding PNG background image

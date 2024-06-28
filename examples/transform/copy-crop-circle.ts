@@ -9,7 +9,11 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_copyCropCircle.png';
 
 /**
- * Cropping images in a circle shape
+ * Function to test the copyCropCircle transformation on an image.
+ * This function reads an input PNG file, decodes it to a MemoryImage,
+ * ensures the image has an alpha channel, applies the copyCropCircle
+ * transformation, encodes the transformed image back to PNG bytes,
+ * and writes the output to a file.
  */
 function testCopyCropCircleTransform() {
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);

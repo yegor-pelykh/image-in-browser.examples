@@ -14,9 +14,12 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_copyFlip.png';
 
 /**
- * Flip image
+ * Function to test the copy and flip transformation on a PNG image.
+ * It reads an input PNG file, decodes it to a MemoryImage, applies the copyFlip transformation,
+ * encodes the transformed image back to PNG bytes, and writes the output to a file.
  */
 function testCopyFlipTransform() {
+  // Read the input PNG file
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // Decoding PNG bytes to MemoryImage
@@ -24,6 +27,7 @@ function testCopyFlipTransform() {
     data: input,
   });
 
+  // Ensure the image is successfully decoded
   console.assert(image !== undefined);
   if (image === undefined) return;
 
@@ -38,6 +42,7 @@ function testCopyFlipTransform() {
     image: image,
   });
 
+  // Write the output PNG file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

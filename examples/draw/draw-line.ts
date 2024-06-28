@@ -14,22 +14,23 @@ import {
 const outputFileName = 'draw-line.png';
 
 /**
- * Drawing lines on the image
+ * Function to test drawing lines on an image and encoding it to PNG format.
  */
 function testDrawLine() {
+  // Create a new MemoryImage with specified width and height
   const image = new MemoryImage({
     width: 256,
     height: 256,
   });
 
-  // Drawing white line
+  // Drawing a white line from (0, 0) to (255, 255)
   Draw.drawLine({
     image: image,
     line: new Line(0, 0, 255, 255),
     color: new ColorRgb8(255, 255, 255),
   });
 
-  // Draw a red line 4 pixels thick with antialiasing
+  // Draw a red line from (255, 0) to (0, 255), 4 pixels thick with antialiasing
   Draw.drawLine({
     image: image,
     line: new Line(255, 0, 0, 255),
@@ -38,11 +39,12 @@ function testDrawLine() {
     thickness: 4,
   });
 
-  // Encode MemoryImage to PNG bytes
+  // Encode the MemoryImage to PNG bytes
   const output = encodePng({
     image: image,
   });
 
+  // Write the PNG bytes to a file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

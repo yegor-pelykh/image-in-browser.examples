@@ -9,12 +9,15 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24.ico';
 
 /**
- * Сonversion from PNG to ICO.
+ * Converts a PNG image to an ICO format.
+ *
+ * This function reads a PNG file from the input folder, decodes it, resizes it to 256x256 pixels
+ * while maintaining the aspect ratio, encodes it to ICO format, and writes the resulting ICO file
+ * to the output folder.
  */
 function convertToIco() {
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
-  // decoding PNG bytes to MemoryImage
   const image = decodePng({
     data: input,
   });
@@ -22,15 +25,12 @@ function convertToIco() {
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // resize to 256 pixels wide because conversion to ICO format
-  // is not currently supported for images larger than 256 pixels
   const resized = Transform.copyResize({
     image: image,
     width: 256,
     maintainAspect: true,
   });
 
-  // encoding MemoryImage to ICO bytes
   const output = encodeIco({
     image: resized,
   });

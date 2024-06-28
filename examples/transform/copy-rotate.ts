@@ -9,9 +9,13 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_copyFlip.png';
 
 /**
- * Rotating an image
+ * Function to test the copy and rotate transformation on a PNG image.
+ * It reads an input PNG file, decodes it, ensures it has an alpha channel,
+ * applies a 45-degree rotation, encodes the transformed image back to PNG,
+ * and writes the output to a file.
  */
 function testCopyRotateTransform() {
+  // Read the input PNG file
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // Decoding PNG bytes to MemoryImage
@@ -19,6 +23,7 @@ function testCopyRotateTransform() {
     data: input,
   });
 
+  // Ensure the image is successfully decoded
   console.assert(image !== undefined);
   if (image === undefined) return;
 
@@ -27,7 +32,7 @@ function testCopyRotateTransform() {
     numChannels: 4,
   });
 
-  // Applying copyRotate transformation
+  // Applying copyRotate transformation with a 45-degree angle
   image = Transform.copyRotate({
     image: image,
     angle: 45,
@@ -38,6 +43,7 @@ function testCopyRotateTransform() {
     image: image,
   });
 
+  // Write the transformed image to the output file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 

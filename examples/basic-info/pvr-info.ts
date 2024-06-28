@@ -8,7 +8,9 @@ import { PvrAppleInfo, PvrDecoder } from 'image-in-browser';
 const fileName = 'globe.pvr';
 
 /**
- * Getting basic information about a PVR image
+ * Reads PVR file information and logs it to the console.
+ * Utilizes PvrDecoder to decode the file and extract details.
+ * Ensures the decoded information is of type PvrAppleInfo before logging.
  */
 function getPvrInfo() {
   const input = Utils.readFile(Folder.input, Section.pvr, fileName);

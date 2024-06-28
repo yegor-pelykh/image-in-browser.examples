@@ -9,9 +9,10 @@ const inputFileName = 'buck_24.png';
 const outputFileName = 'buck_24_filter_sepia.png';
 
 /**
- * Applying a sepia filter
+ * Applies a sepia filter to an input PNG image and writes the result to an output file.
  */
 function testSepiaFilter() {
+  // Read the input PNG file
   const input = Utils.readFile(Folder.input, Section.png, inputFileName);
 
   // Decoding PNG bytes to MemoryImage
@@ -19,19 +20,21 @@ function testSepiaFilter() {
     data: input,
   });
 
+  // Ensure the image was decoded successfully
   console.assert(image !== undefined);
   if (image === undefined) return;
 
-  // Applying sepia filter
+  // Applying sepia filter to the image
   Filter.sepia({
     image: image,
   });
 
-  // Encode MemoryImage to PNG bytes
+  // Encode the modified MemoryImage back to PNG bytes
   const output = encodePng({
     image: image,
   });
 
+  // Write the output PNG file
   Utils.writeFile(Folder.output, Section.png, outputFileName, output);
 }
 
