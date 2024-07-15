@@ -65,6 +65,8 @@ Quick links to examples
 
 [**Writing and reading EXIF data of JPG image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/exif-data/exif-jpeg.ts)
 
+[**Removing EXIF data from JPG image**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/exif-data/remove-exif-data.ts)
+
 ### Filters
 
 [**Applying a contrast filter**](https://github.com/yegor-pelykh/image-in-browser.examples/blob/main/examples/filter/contrast.ts)
