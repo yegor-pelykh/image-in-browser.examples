@@ -18,7 +18,7 @@ To run the examples, it is most convenient to use the VSCode IDE, for which the 
 
 To run the example:
 - open the file with the example you want to run or debug
-- press F5 in VSCode
+- press `F5` in VSCode
 
 The environment will launch the build process in the background, and then launch the currently open example for execution and debugging.
 
