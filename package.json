@@ -18,15 +18,15 @@
     "build": "npm run build:pre && npm run format && npm run build:examples"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.14.1",
-    "eslint": "^9.5.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.2"
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "image-in-browser": "^3.1.0"
+    "image-in-browser": "^3.2.2"
   }
 }
